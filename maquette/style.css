@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #FFD700;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+header p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+#accueil {
+  background-image: url("cover.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: auto;
+}
+
+#accueil h1 {
+  font-size: 36px;
+}
+
+#accueil button {
+  background-color: #DC143C;
+}
+
+#texte-intro p {
+    text-align:center ;
+    margin:auto ;
+    background-color :rgba(0,0,0,0.7);
+    color:white ;
+    padding :10px ;
+}
+
+#collections h2 {
+    text-align:center ;
+}
+#collections div{
+display:flex ;
+justify-content :space-around ;
+gap :20px ;
+}
+#collections div img{
+width:auto ;
+}
+
+#audios h2{
+text-align:center ;
+}
+#audios div{
+display:flex ;
+flex-wrap :wrap ;
+gap :20px ;
+}
+#audios div img{
+width:auto ;
+}
+#audios div audio{
+margin-top :auto ;
+}
+
+#videos h2{
+text-align:center ;
+}
+#videos video{
+width:auto ;
+margin :auto ;
+}
+
+#artistes h2{
+text-align:center ;
+margin-bottom :20px ;
+}
+#artistes div{
+display:flex ;
+flex-wrap :wrap ;
+justify-content:center ;
+gap :10px ;
+}
+#artistes div img{
+width:auto ;
+transition :transform .3s ease ,box-shadow .3s ease-in-out ;
+}
+#artistes div img:hover{
+transform :scale(1.1);
+box-shadow :rgba(0,0,0,.5)0px4px15px ;
+}
+
+#about h2{
+text-align:center ;
+margin-bottom :20px ;
+}
+#about img{
+width:auto ;
+margin-bottom :10px ;
+}
+
+.contact {
+    margin:auto ;
+    text-align:center ;
+    background-color:#235789 ;
+    color:white ;
+    width:auto ;
+    height:auto ;
+    margin-bottom :5% ;
+}
+.contact h2{
+display:flex ;
+justify-content:center ;
+align-items :center;}
+.contact form input ,textarea ,button{
+margin-top :10px ;
+padding :10px ;
+border-radius :5px ;
+border:none ;
+}
+
+footer {
+    text-align:center ;
+    background-color:#FFD700;
+    color:black ;
+    padding-top :10px ;
+}
+
+@media screen and (max-width :1007){
+#collection-list{
+justify-content:center ;}}
+@media screen and (max-width :1000){
+.audio-list{
+flex-direction :column}}
+#collections {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#collections h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#collections > div {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+#collections img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#collections p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#collections div:hover p {
+  opacity: 1;
+}
+
+#collections div:hover img {
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+#audios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#audios h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#audios > div {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#audios img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#audios div > div {
+  background-color: #235789;
+  color: white;
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#audios p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#audios audio {
+  width: 100%;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: black;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: #ccc;
+  border-radius: 25px;
+  margin: 0 15px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #ccc;
+  border-radius: 25px;
+  padding: 0 5px;
+}
+
+#videos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#videos h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#videos video {
+  width: 400px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+#artistes {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#artistes h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#artistes > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#artistes img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#videos::after {
+  content: "";
+  display: block;
+  margin-top: 10px;
+}
+
+#videos video:first-of-type::after {
+  content: "LOFICITY";
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#videos video:last-of-type::after {
+  content: "DRAGON FIRE";
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#about {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#about img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+ 
+}
+
+#about p:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+}
+
+#about p:last-of-type {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+}
+#contact {
+  background-color: #235789;
+  color: white;
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#contact form {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+#contact button {
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+#contact button:hover {
+  background-color: #660000;
+
+}
+
+footer {
+  font-family: "Jersey 10", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  background-color: #f1d302;
+  color: black;
+}
+

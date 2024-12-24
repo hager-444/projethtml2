@@ -1,0 +1,11 @@
+J’ai cherché à organiser les différentes sections de manière claire et intuitive, mais je dois reconnaître que la partie finale, le footer, n’est pas totalement aboutie..
+
+Dans un premier temps, j’ai travaillé sur les bases en réinitialisant les styles par défaut des navigateurs pour garantir une cohérence visuelle sur tous les appareils.
+
+Les sections comme "collections" ou "artistes" intègrent des effets au survol pour rendre l’expérience plus interactive comme montré sur la maquette fournie.
+
+De même, les sections « collections » « à propos » et « contactez nous » sont réactives lorsqu’on passe au dessus.
+
+Cependant, j’ai rencontré des difficultés dans la conception du footer et du bouton « explorer » qui est censé être centré sur l’image. Je n’ai pas réussi à le reproduire exactement à l’identique avec la bonne police ni la bonne taille.
+
+Le footer reste un point faible que je dois retravailler et le bouton aussi.

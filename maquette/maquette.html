@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongUniverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.svg" alt="Logo SongUniverse">
+            <p>SongUniverse</p>
+        </div>
+        <nav>
+            <a href="#collections">COLLECTIONS</a>
+            <a href="#about">À PROPOS</a>
+            <a href="#contact">CONTACTEZ-NOUS</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h1>Explorez un univers sonore généré par l'IA</h1>
+            <img src="cover.png">
+            <button>Explorer</button>
+        </section>
+
+        <section id="texte-intro">
+            <p>Il est parfois dur de trouver le genre musical parfait qui convient à nos goûts.<br>Sur cette plateforme, nous mettons en valeur des genres musicaux moins connus.</p>
+        </section>
+
+        <section id="collections">
+            <h2>COLLECTIONS</h2>
+            <div>
+                <img src="collection-audio.png" alt="Collection Audios">
+                <p>AUDIOS</p>
+            </div>
+            <div>
+                <img src="collection-video.png" alt="Collection Vidéos">
+                <p>VIDEOS</p>
+            </div>
+            <div>
+                <img src="collection-artiste.png" alt="Collection Artistes">
+                <p>ARTISTES</p>
+            </div>
+        </section>
+
+        <section id="audios">
+            <h2>AUDIOS</h2>
+            <div>
+                <img src="audio1.png" alt="Image contenant deux paons">
+                <p>TITRE : Карна</p>
+                <p>Style : #carnatic</p>
+                <p>Artiste : Леонід Українець</p>
+                <audio src="audios/audio1.mp3" controls></audio>
+            </div>
+
+            <div>
+                <img src="audio2.png" alt="Image d'un violoncelle">
+                <p>TITRE : Viola I</p>
+                <p>Style : #handpan #dark #electro #cryptic #violin</p>
+                <p>Artiste : insaneruediger</p>
+                <audio src="audios/audio2.mp3" controls></audio>
+            </div>
+
+            <div>
+                <img src="audio3.png" alt="Image d'une plaine avec des cocotiers">
+                <p>TITRE : SASA</p>
+                <p>Style : #maloya</p>
+                <p>Artiste : LarryP</p>
+                <audio src="audios/audio3.mp3" controls></audio>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>VIDEOS</h2>
+            <video controls width="300px">
+                <source src="videos/loficity.mp4" type="video/webm">
+                Votre navigateur ne supporte pas cette vidéo.
+            </video>
+
+            <video controls autoplay muted width="300px">
+                <source src="videos/dragon.mp4" type="video/webm">
+                Votre navigateur ne supporte pas cette vidéo.
+            </video>
+        </section>
+
+        <section id="artistes">
+            <h2>ARTISTES</h2>
+            <div>
+                <div>
+                    <img src="artiste1.png" alt="Artiste numéro 1">
+                </div>
+                <div>
+                    <img src="artiste2.png" alt="Artiste numéro 2">
+                </div>
+                <div>
+                    <img src="artiste3.png" alt="Artiste numéro 3">
+                </div>
+                <div>
+                    <img src="artiste4.png" alt="Artiste numéro 4">
+                </div>
+                <div>
+                    <img src="artiste5.png" alt="Artiste numéro 5">
+                </div>
+                <div>
+                    <img src="artiste6.png" alt="Artiste numéro 6">
+                </div>
+                <div>
+                    <img src="artiste7.png" alt="Artiste numéro 7">
+                </div>
+                <div>
+                    <img src="artiste8.png" alt="Artiste numéro 8">
+                </div>
+                <div>
+                    <img src="artiste9.png" alt="Artiste numéro 9">
+                </div>
+                <div>
+                    <img src="artiste10.png" alt="Artiste numéro 10">
+                </div>
+                <div>
+                    <img src="artiste11.png" alt="Artiste numéro 11">
+                </div>
+                <div>
+                    <img src="artiste12.png" alt="Artiste numéro 12">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>A PROPOS</h2>
+            <img src="about-us.png" alt="Photo d'un homme et d'une femme">
+            <p>"La musique est le reflet de l'âme."<p>
+            Eternelle insatisfait, nous ne nous retrouvions pas dans les genres musicaux existants. Musiciens, chanteurs et compositeurs, nous avons parcouru le monde en recherche de nouveaux genres.
+        </section>
+
+        ​<section id="contact">
+           ​<h2>Contactez-nous</h2>
+           Vous souhaitez contribuer à cette plateforme ? Envoyez-nous un message ou une musique !
+           ​<form action="/submit-message" method="POST">
+               Email :<br />
+               ​<input type="email" required><br />
+               Message :<br />
+               ​<textarea required></textarea><br />
+               Envoyer une musique (optionnel) :<br />
+               ​<input type="file"><br />
+               ​<button type="submit">Envoyer</button><br />
+           ​</form><br />
+       ​<footer>Copyright SongUniverse
+
